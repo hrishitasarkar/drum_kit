@@ -8,8 +8,8 @@ document.querySelectorAll(".drum")[i].addEventListener("click",function(){
 });
 
 document.addEventListener("keydown",function(event){
-    makeSound(event);
-    buttonAnimation(event);
+    makeSound(event.key);
+    buttonAnimation(event.key);
 });
 
 function makeSound(key){
